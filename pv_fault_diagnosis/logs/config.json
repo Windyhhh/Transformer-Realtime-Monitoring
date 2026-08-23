@@ -1,0 +1,11 @@
+{
+    "normal_file": "../F0L.xlsx",
+    "fault_file": "../F1L.xlsx",
+    "epochs": 50,
+    "batch_size": 32,
+    "time_steps": 30,
+    "d_model": 64,
+    "nhead": 4,
+    "num_layers": 2,
+    "learning_rate": 0.0001
+}
