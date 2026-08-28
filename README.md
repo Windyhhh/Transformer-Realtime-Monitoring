@@ -62,6 +62,16 @@ Transformer-Realtime-Monitoring/
 
 ---
 
+
+## Results
+
+<div align="center">
+  <img src="pv_fault_diagnosis/results/confusion_matrix.png" alt="Confusion matrix" width="70%"/>
+  <img src="pv_fault_diagnosis/results/roc_curve.png" alt="ROC curve" width="70%"/>
+  <img src="pv_fault_diagnosis/results/training_curves.png" alt="Training curves" width="70%"/>
+</div>
+
+---
 ## License
 
 MIT — free to use, modify and distribute.
