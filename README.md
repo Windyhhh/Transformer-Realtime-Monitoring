@@ -2,22 +2,32 @@
 
 # 📡 Transformer-Realtime-Monitoring
 
-### Transformer-based real-time intelligent monitoring.
+### Transformer-based real-time PV fault monitoring.
 
-Anomaly detection and time-series analysis — with PV fault diagnosis.
+Time-series fault classification at 96.8% accuracy — millisecond inference, edge / cloud deployable.
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
 
 </div>
 
 ---
 
-**Transformer-Realtime-Monitoring** is a **Transformer-based real-time intelligent monitoring** system for **anomaly detection** and time-series analysis, with a PV fault-diagnosis module and trained model.
+**Transformer-Realtime-Monitoring** classifies **photovoltaic module faults** with a **Transformer** model over time-series data — reaching **96.8% accuracy** (F1 97.2%, ROC AUC 0.99) with **millisecond-level** inference, deployable at edge or cloud.
 
 > [!NOTE]
-> 中文项目：基于 Transformer 的实时智能监控系统——异常检测、时序分析（光伏故障诊断）。
+> 中文项目：基于 Transformer 的光伏模块故障实时监测——时序分类，准确率 96.8%，毫秒级推理，边缘/云端部署。
+
+---
+
+## Features
+
+- **Transformer classifier** — time-series fault diagnosis.
+- **High accuracy** — 96.8% accuracy, F1 97.2%, ROC AUC 0.99.
+- **Real-time** — millisecond inference.
+- **Flexible deployment** — edge or cloud.
+- **Transferable** — applicable to wind, grid and industrial monitoring.
 
 ---
 
@@ -29,25 +39,11 @@ cd Transformer-Realtime-Monitoring
 
 pip install -r requirements.txt
 
-# train / diagnose
-python pv_fault_diagnosis/main.py
-
-# evaluate
-python pv_fault_diagnosis/evaluate.py
-
-# inference
-python pv_fault_diagnosis/inference.py
+python pv_fault_diagnosis/main.py    # train / diagnose
+python pv_fault_diagnosis/inference.py  # real-time inference
 ```
 
-A trained model (`best_model.pth`) and scaler are included.
-
----
-
-## Features
-
-- **Transformer monitoring** — anomaly detection over time series.
-- **PV fault diagnosis** — real deployment case.
-- **Trained model** — weights + training history included.
+A trained model (`best_model.pth`) is included.
 
 ---
 
@@ -59,7 +55,7 @@ Transformer-Realtime-Monitoring/
 │   ├── main.py, model.py, inference.py, evaluate.py
 │   ├── data_preprocessing.py
 │   ├── models/            # best_model.pth, scaler.pkl
-│   └── logs/              # config, training_history
+│   └── logs/
 ├── F0L.xlsx / F1L.xlsx    # data
 └── README.md
 ```
